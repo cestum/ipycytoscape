@@ -34,6 +34,19 @@ import klay from 'cytoscape-klay';
 
 import 'tippy.js/themes/material.css';
 
+// @ts-ignore
+import cise from 'cytoscape-cise';
+// @ts-ignore
+import avsdf from 'cytoscape-avsdf';
+// @ts-ignore
+// import elk from 'cytoscape-elk';
+// @ts-ignore
+import euler from 'cytoscape-euler';
+// @ts-ignore
+import spread from 'cytoscape-spread';
+// @ts-ignore
+import fcose from 'cytoscape-fcose';
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { NodeModel, EdgeModel } from './graph';
 
@@ -41,6 +54,12 @@ cytoscape.use(popper);
 cytoscape.use(dagre);
 cytoscape.use(klay);
 cytoscape.use(cola);
+cytoscape.use(cise);
+cytoscape.use(avsdf);
+// cytoscape.use(elk);
+cytoscape.use(euler);
+cytoscape.use(spread);
+cytoscape.use(fcose);
 
 export class CytoscapeModel extends DOMWidgetModel {
   defaults() {
